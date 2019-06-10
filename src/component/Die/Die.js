@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+// import RollDice from "../RollDice/RollDice";
+
 import "./die.scss";
 
 export default class Die extends Component {

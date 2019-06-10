@@ -1,14 +1,20 @@
-import React, {Component} from "react";
-import { render } from "node-sass";
+import React, { Component } from "react";
 
-class RollDice extends Component{
-  constructor(props){
+import Die from "../Die/Die";
+
+class RollDice extends Component {
+  constructor(props) {
     super(props);
-    this.state={
-
-    }
-    render(){
-
-    }
+    this.state = { die1: "one", die2: "one" };
+  }
+  render() {
+    return (
+      <div>
+        <Die face={this.state.die1} />
+        <Die face={this.state.die2} />
+      </div>
+    );
   }
 }
+
+export default RollDice;
