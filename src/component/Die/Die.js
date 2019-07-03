@@ -10,7 +10,7 @@ export default class Die extends Component {
       <div className="Die">
         <i
           className={`Die fas fa-dice-${this.props.face}
-          ${this.props.rolling && "shaking"}`}
+          ${this.props.rolling ? "shaking" : ""}`}
         />
       </div>
     );
